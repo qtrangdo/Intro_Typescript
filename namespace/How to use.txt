@@ -1,0 +1,8 @@
+How to use
+
+Run "npm install" to install the required dependencies
+
+Run "tsc" to compile the TypeScript code
+
+
+Use live-server to start
