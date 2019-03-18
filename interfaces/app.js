@@ -18,6 +18,7 @@ var person = {
 // changeName(person);
 // greet(person);
 person.greet('Do');
+//  ****** CLASS ... IMPLEMENTS
 var Person = /** @class */ (function () {
     function Person() {
     }
@@ -31,3 +32,16 @@ var Person = /** @class */ (function () {
 var myPerson = new Person();
 myPerson.firstName = 'Harry';
 myPerson.greet('Potter');
+var myDoubleFunc;
+myDoubleFunc = function (value1, value22) {
+    return (value1 + value22) * 2;
+};
+console.log(myDoubleFunc(10, 10));
+var oldPerson = {
+    age: 26,
+    firstName: 'Moe',
+    greet: function (lastName) {
+        console.log('Hello');
+    }
+};
+console.log(oldPerson);

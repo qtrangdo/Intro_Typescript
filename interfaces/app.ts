@@ -30,6 +30,8 @@ const person = {
 
 person.greet('Do');
 
+//  ****** CLASS ... IMPLEMENTS
+
 class Person implements NamedPerson {
   firstName: string;
   greet(lastName: string) {
@@ -40,3 +42,32 @@ class Person implements NamedPerson {
 const myPerson = new Person();
 myPerson.firstName = 'Harry';
 myPerson.greet('Potter');
+
+// ******* FUNTION TYPES
+
+interface DoubleValueFunc {
+  (number1: number, number2: number)
+}
+
+let myDoubleFunc: DoubleValueFunc;
+myDoubleFunc = function(value1: number, value22: number) {
+  return ( value1 + value22 ) * 2;
+}
+
+console.log(myDoubleFunc(10,10));
+
+// ******** INTERFACE INHERITANCE
+
+interface AgedPerson extends NamedPerson {
+  age: number,
+}
+
+const oldPerson: AgedPerson = {
+  age: 26,
+  firstName: 'Moe',
+  greet(lastName: string) {
+    console.log('Hello')
+  }
+}
+
+console.log(oldPerson);
